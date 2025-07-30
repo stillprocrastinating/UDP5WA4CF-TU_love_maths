@@ -24,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
  */
 function runGame(gameType) {
 
+	// Empties answer-box on game refresh
+	document.getElementById("answer-box").value = "";
+
+	// Focuses cursor in answer-box on game refresh, ready for typing answer
+	document.getElementById("answer-box").focus();
+
 	// Creates two random numbers between 1 and 25
 	let num1 = Math.floor(Math.random() * 25) + 1;
 	let num2 = Math.floor(Math.random() * 25) + 1;
